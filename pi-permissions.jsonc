@@ -1,0 +1,43 @@
+{
+  "defaultPolicy": {
+    "tools": "ask",
+    "bash": "ask",
+    "mcp": "ask",
+    "skills": "allow",
+    "special": "ask"
+  },
+  "tools": {
+    "read": "allow",
+    "write": "allow",
+    "edit": "allow",
+    "grep": "allow",
+    "find": "allow",
+    "ls": "allow"
+  },
+  "bash": {
+    "git *": "allow",
+    "python *": "allow",
+    "uv *": "allow",
+    "cat *": "allow",
+    "ls *": "allow",
+    "grep *": "allow",
+    "rg *": "allow",
+    "find *": "allow",
+    "fd *": "allow",
+    "head *": "allow",
+    "tail *": "allow",
+    "less *": "allow",
+    "wc *": "allow",
+    "file *": "allow",
+    "stat *": "allow",
+    "tree *": "allow",
+    "which *": "allow",
+    "type *": "allow",
+    "realpath *": "allow",
+    "readlink *": "allow",
+    "bat *": "allow",
+    "exa *": "allow",
+    "eza *": "allow",
+    "rm -rf *": "ask"
+  }
+}

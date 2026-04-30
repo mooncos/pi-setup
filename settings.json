@@ -1,0 +1,14 @@
+{
+  "lastChangelogVersion": "0.70.6",
+  "theme": "dark",
+  "defaultProvider": "amazon-bedrock",
+  "defaultModel": "eu.anthropic.claude-opus-4-6-v1",
+  "defaultThinkingLevel": "max",
+  "npmCommand": [
+    "bun"
+  ],
+  "packages": [
+    "https://github.com/MasuRii/pi-tool-display",
+    "https://github.com/MasuRii/pi-permission-system"
+  ]
+}
