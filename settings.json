@@ -3,7 +3,7 @@
   "theme": "dark",
   "defaultProvider": "amazon-bedrock",
   "defaultModel": "eu.anthropic.claude-opus-4-6-v1",
-  "defaultThinkingLevel": "xhigh",
+  "defaultThinkingLevel": "high",
   "npmCommand": [
     "bun"
   ],
