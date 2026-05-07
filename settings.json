@@ -1,8 +1,8 @@
 {
   "lastChangelogVersion": "0.74.0",
   "theme": "dark",
-  "defaultProvider": "anthropic",
-  "defaultModel": "claude-sonnet-4-5",
+  "defaultProvider": "cursor",
+  "defaultModel": "composer-2-fast",
   "defaultThinkingLevel": "high",
   "npmCommand": [
     "bun"
