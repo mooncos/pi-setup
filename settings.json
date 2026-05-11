@@ -10,6 +10,7 @@
   "packages": [
     "https://github.com/MasuRii/pi-tool-display",
     "https://github.com/MasuRii/pi-permission-system",
-    "git:git@github.com:netandreus/pi-cursor-provider.git"
+    "git:git@github.com:netandreus/pi-cursor-provider.git",
+    "git:git@github.com:arpagon/pi-rewind.git"
   ]
 }
