@@ -1,9 +1,21 @@
 {
   "lastChangelogVersion": "0.74.0",
   "theme": "dark",
+<<<<<<< HEAD
   "defaultProvider": "amazon-bedrock",
   "defaultModel": "eu.anthropic.claude-opus-4-7",
   "defaultThinkingLevel": "xhigh",
+=======
+<<<<<<< HEAD
+  "defaultProvider": "cursor",
+  "defaultModel": "composer-2-fast",
+  "defaultThinkingLevel": "high",
+=======
+  "defaultProvider": "amazon-bedrock",
+  "defaultModel": "eu.anthropic.claude-opus-4-6-v1",
+  "defaultThinkingLevel": "xhigh",
+>>>>>>> 661dd90 (sync 2026-05-06)
+>>>>>>> c128fb9 (sync 2026-05-11)
   "npmCommand": [
     "bun"
   ],
