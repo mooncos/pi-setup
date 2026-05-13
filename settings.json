@@ -13,6 +13,7 @@
     "git:git@github.com:netandreus/pi-cursor-provider.git",
     "git:git@github.com:arpagon/pi-rewind.git",
     "git:git@github.com:nicobailon/pi-subagents.git",
-    "git:git@github.com:nicobailon/pi-intercom.git"
+    "git:git@github.com:nicobailon/pi-intercom.git",
+    "git:git@github.com:dbachelder/pi-btw.git"
   ]
 }
