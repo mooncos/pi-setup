@@ -15,6 +15,6 @@
     "git:git@github.com:nicobailon/pi-subagents.git",
     "git:git@github.com:nicobailon/pi-intercom.git",
     "git:git@github.com:dbachelder/pi-btw.git",
-    "git:git@github.com:georgebashi/pi-web-fetch.git"
+    "git:git@github.com:nicobailon/pi-web-access.git"
   ]
 }
