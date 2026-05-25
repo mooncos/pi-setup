@@ -4,3 +4,6 @@ git/
 bin/
 npm/
 intercom/
+pi-crash.log
+push-ericsson.sh
+run-history.jsonl
