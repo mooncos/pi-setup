@@ -12,7 +12,11 @@
     "edit": "allow",
     "grep": "allow",
     "find": "allow",
-    "ls": "allow"
+    "ls": "allow",
+    "web_search": "ask",
+    "fetch_content": "ask",
+    "get_search_content": "ask",
+    "code_search": "ask"
   },
   "bash": {
     "git *": "allow",
