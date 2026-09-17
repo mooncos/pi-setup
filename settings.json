@@ -50,6 +50,7 @@
     "git:git@github.com:nicobailon/pi-subagents.git",
     "git:git@github.com:nicobailon/pi-intercom.git",
     "git:git@github.com:dbachelder/pi-btw.git",
-    "git:git@github.com:nicobailon/pi-web-access.git"
+    "git:git@github.com:nicobailon/pi-web-access.git",
+    "npm:@robhowley/pi-openrouter"
   ]
 }
