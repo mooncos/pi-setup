@@ -5,7 +5,7 @@
   "defaultModel": "eu.anthropic.claude-opus-4-8",
   "defaultThinkingLevel": "xhigh",
   "npmCommand": [
-    "bun"
+    "npm"
   ],
   "subagents": {
     "agentOverrides": {
@@ -52,6 +52,5 @@
     "git:git@github.com:dbachelder/pi-btw.git",
     "git:git@github.com:nicobailon/pi-web-access.git",
     "git:git@github.com:ShpetimA/pi-fff.git",
-    "git:git@github.com:obra/superpowers.git"
   ]
 }
