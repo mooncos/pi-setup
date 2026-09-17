@@ -3,7 +3,6 @@
   "theme": "dark",
   "defaultProvider": "openrouter",
   "defaultModel": "stealth/union-alpha",
-  "defaultThinkingLevel": "xhigh",
   "npmCommand": [
     "npm"
   ],
