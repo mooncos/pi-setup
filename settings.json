@@ -1,5 +1,5 @@
 {
-  "lastChangelogVersion": "0.79.10",
+  "lastChangelogVersion": "0.85.1",
   "theme": "dark",
   "defaultProvider": "amazon-bedrock",
   "defaultModel": "eu.anthropic.claude-opus-4-8",
@@ -50,6 +50,6 @@
     "git:git@github.com:nicobailon/pi-subagents.git",
     "git:git@github.com:nicobailon/pi-intercom.git",
     "git:git@github.com:dbachelder/pi-btw.git",
-    "git:git@github.com:nicobailon/pi-web-access.git",
+    "git:git@github.com:nicobailon/pi-web-access.git"
   ]
 }
