@@ -1,53 +1,56 @@
 {
-  "lastChangelogVersion": "0.87.1",
-  "theme": "dark",
-  "defaultProvider": "openrouter",
   "defaultModel": "stealth/union-alpha",
+  "defaultProvider": "openrouter",
+  "lastChangelogVersion": "0.87.1",
   "npmCommand": [
     "npm"
   ],
+  "packages": [
+    "git:git@github.com:arpagon/pi-rewind.git",
+    "git:git@github.com:nicobailon/pi-subagents.git",
+    "git:git@github.com:nicobailon/pi-intercom.git",
+    "npm:gentle-pi",
+    "npm:gentle-engram",
+    "npm:gentle-engram@0.1.15",
+    "npm:pi-web-access",
+    "npm:pi-btw",
+    "npm:pi-mcp-adapter"
+  ],
   "subagents": {
     "agentOverrides": {
-      "scout": {
-        "model": "amazon-bedrock/eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "context-builder": {
+        "model": "amazon-bedrock/eu.anthropic.claude-sonnet-4-6",
         "thinking": "xhigh"
       },
       "delegate": {
         "model": "amazon-bedrock/eu.anthropic.claude-haiku-4-5-20251001-v1:0",
         "thinking": "xhigh"
       },
-      "researcher": {
+      "oracle": {
         "model": "amazon-bedrock/eu.anthropic.claude-opus-4-7",
-        "thinking": "xhigh"
-      },
-      "context-builder": {
-        "model": "amazon-bedrock/eu.anthropic.claude-sonnet-4-6",
         "thinking": "xhigh"
       },
       "planner": {
         "model": "amazon-bedrock/eu.anthropic.claude-opus-4-7",
         "thinking": "xhigh"
       },
-      "worker": {
-        "model": "amazon-bedrock/eu.anthropic.claude-sonnet-4-6",
+      "researcher": {
+        "model": "amazon-bedrock/eu.anthropic.claude-opus-4-7",
         "thinking": "xhigh"
       },
       "reviewer": {
         "model": "amazon-bedrock/eu.anthropic.claude-opus-4-7",
         "thinking": "xhigh"
       },
-      "oracle": {
-        "model": "amazon-bedrock/eu.anthropic.claude-opus-4-7",
+      "scout": {
+        "model": "amazon-bedrock/eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+        "thinking": "xhigh"
+      },
+      "worker": {
+        "model": "amazon-bedrock/eu.anthropic.claude-sonnet-4-6",
         "thinking": "xhigh"
       }
     }
   },
-  "packages": [
-    "https://github.com/MasuRii/pi-tool-display",
-    "git:git@github.com:arpagon/pi-rewind.git",
-    "git:git@github.com:nicobailon/pi-subagents.git",
-    "git:git@github.com:nicobailon/pi-intercom.git",
-    "git:git@github.com:dbachelder/pi-btw.git",
-    "git:git@github.com:nicobailon/pi-web-access.git"
-  ]
+  "theme": "dark"
 }
