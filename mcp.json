@@ -6,6 +6,10 @@
         "--mcp"
       ],
       "command": "codegraph"
+    },
+    "viajante": {
+      "command": "uvx",
+      "args": ["--from", "viajante[mcp]", "viajante-mcp"]
     }
   }
 }

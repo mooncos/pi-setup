@@ -1,0 +1,12 @@
+[
+  {
+    "timestamp": "2026-09-24T15:04:15.807Z",
+    "version": "0.87.1",
+    "kind": "uncaught_exception",
+    "message": "getWindowSize ENOTTY",
+    "stack": "Error: getWindowSize ENOTTY\n    at WriteStream._refreshSize (node:tty:136:24)\n    at process.refreshStdoutOnSigWinch (node:internal/bootstrap/switches/is_main_thread:138:10)\n    at process.emit (node:events:521:24)",
+    "sessionFile": "/Users/egomarm/.pi/agent/sessions/--Users-egomarm--/2026-09-24T14-46-48-986Z_01a0d3e2-2799-7508-bbdd-fd83cd81bbdd.jsonl",
+    "cwd": "/Users/egomarm",
+    "notified": true
+  }
+]
