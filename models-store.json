@@ -5536,7 +5536,7 @@
         "type": "chat"
       }
     ],
-    "checkedAt": 1790326216847,
+    "checkedAt": 1790344984703,
     "lastModified": 1790239015000,
     "etag": "W/\"776d912523e316e620601acf00de51d8\""
   },
@@ -5788,7 +5788,7 @@
           "text"
         ],
         "cost": {
-          "input": 0.09984,
+          "input": 0.2528,
           "output": 2.88,
           "cacheRead": 0.08832,
           "cacheWrite": 0
@@ -8662,9 +8662,9 @@
           "image"
         ],
         "cost": {
-          "input": 0.3,
-          "output": 1.2,
-          "cacheRead": 0.006,
+          "input": 0.15,
+          "output": 0.6,
+          "cacheRead": 0.003,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
@@ -12529,13 +12529,13 @@
           "text"
         ],
         "cost": {
-          "input": 0.08,
+          "input": 0.07,
           "output": 0.2,
           "cacheRead": 0.04,
           "cacheWrite": 0
         },
         "contextWindow": 262144,
-        "maxTokens": 131072,
+        "maxTokens": 235929,
         "compat": {
           "supportsDeveloperRole": false,
           "thinkingFormat": "openrouter",
@@ -20292,9 +20292,9 @@
         }
       }
     ],
-    "checkedAt": 1790326216854,
-    "lastModified": 1790325508000,
-    "etag": "W/\"903331fcafffa4dc9bfa5653b1f16344\""
+    "checkedAt": 1790344984673,
+    "lastModified": 1790340046000,
+    "etag": "W/\"eaf47e3be4c6cb1b339a8bbfecf7fe2a\""
   },
   "huggingface": {
     "models": [
@@ -22611,7 +22611,7 @@
         "type": "chat"
       }
     ],
-    "checkedAt": 1790326216870,
+    "checkedAt": 1790344984733,
     "lastModified": 1790239050000,
     "etag": "W/\"16fd3507eb5807845f3f87d72e24c778\""
   },
