@@ -7535,7 +7535,7 @@
         "cost": {
           "input": 0.0115,
           "output": 1.8,
-          "cacheRead": 0.0104,
+          "cacheRead": 0.0114,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
@@ -10042,6 +10042,53 @@
       },
       {
         "type": "chat",
+        "id": "deepseek/deepseek-v4.1-flash-1017",
+        "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+        "api": "openai-completions",
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "provider": "openrouter",
+        "reasoning": true,
+        "thinkingLevelMap": {
+          "off": "none",
+          "minimal": null,
+          "low": "low",
+          "medium": null,
+          "high": "high",
+          "xhigh": null,
+          "max": "max"
+        },
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.0115,
+          "output": 1.8,
+          "cacheRead": 0.0114,
+          "cacheWrite": 0
+        },
+        "contextWindow": 1048576,
+        "maxTokens": 943718,
+        "compat": {
+          "supportsDeveloperRole": false,
+          "thinkingFormat": "openrouter",
+          "supportsStrictMode": true,
+          "sendSessionAffinityHeaders": true,
+          "requiresReasoningContentOnAssistantMessages": true
+        },
+        "inputLimits": {
+          "images": {
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        }
+      },
+      {
+        "type": "chat",
         "id": "deepseek/deepseek-v4.1-flash:batch",
         "name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
         "api": "openai-completions",
@@ -10107,6 +10154,43 @@
         },
         "contextWindow": 512000,
         "maxTokens": 460800,
+        "compat": {
+          "supportsDeveloperRole": false,
+          "thinkingFormat": "openrouter",
+          "supportsStrictMode": true,
+          "sendSessionAffinityHeaders": true
+        },
+        "inputLimits": {
+          "images": {
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        }
+      },
+      {
+        "type": "chat",
+        "id": "elorian/glimpse",
+        "name": "Elorian: Glimpse",
+        "api": "openai-completions",
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "provider": "openrouter",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.6,
+          "output": 3,
+          "cacheRead": 0.06,
+          "cacheWrite": 0
+        },
+        "contextWindow": 262144,
+        "maxTokens": 256000,
         "compat": {
           "supportsDeveloperRole": false,
           "thinkingFormat": "openrouter",
@@ -11695,6 +11779,41 @@
         },
         "contextWindow": 260000,
         "maxTokens": 65536,
+        "compat": {
+          "supportsDeveloperRole": false,
+          "thinkingFormat": "openrouter",
+          "supportsStrictMode": true,
+          "sendSessionAffinityHeaders": true
+        }
+      },
+      {
+        "type": "chat",
+        "id": "inception/mercury-3",
+        "name": "Inception: Mercury 3",
+        "api": "openai-completions",
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "provider": "openrouter",
+        "reasoning": true,
+        "thinkingLevelMap": {
+          "off": "none",
+          "minimal": null,
+          "low": "low",
+          "medium": "medium",
+          "high": "high",
+          "xhigh": null,
+          "max": null
+        },
+        "input": [
+          "text"
+        ],
+        "cost": {
+          "input": 0.1,
+          "output": 0.35,
+          "cacheRead": 0.01,
+          "cacheWrite": 0
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 131072,
         "compat": {
           "supportsDeveloperRole": false,
           "thinkingFormat": "openrouter",
@@ -19635,6 +19754,43 @@
       },
       {
         "type": "chat",
+        "id": "qwen/qwen3.7-plus:batch",
+        "name": "Qwen: Qwen3.7 Plus (batch)",
+        "api": "openai-completions",
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "provider": "openrouter",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.23,
+          "output": 0.92,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "contextWindow": 262144,
+        "maxTokens": 131072,
+        "compat": {
+          "supportsDeveloperRole": false,
+          "thinkingFormat": "openrouter",
+          "supportsStrictMode": true,
+          "sendSessionAffinityHeaders": true
+        },
+        "inputLimits": {
+          "images": {
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        }
+      },
+      {
+        "type": "chat",
         "id": "qwen/qwen3.8-2.4t-a95b",
         "name": "Qwen: Qwen3.8 2.4T A95B",
         "api": "openai-completions",
@@ -19878,6 +20034,70 @@
               "jpegQuality": 80
             }
           }
+        }
+      },
+      {
+        "type": "chat",
+        "id": "recursive/flint-v1.0:free",
+        "name": "Recursive: Flint (free)",
+        "api": "openai-completions",
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "provider": "openrouter",
+        "reasoning": true,
+        "thinkingLevelMap": {
+          "off": null
+        },
+        "input": [
+          "text"
+        ],
+        "cost": {
+          "input": 0,
+          "output": 0,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "contextWindow": 262144,
+        "maxTokens": 235929,
+        "compat": {
+          "supportsDeveloperRole": false,
+          "thinkingFormat": "openrouter",
+          "supportsStrictMode": true,
+          "sendSessionAffinityHeaders": true
+        }
+      },
+      {
+        "type": "chat",
+        "id": "reflection/beam-1.0-501b-a23b",
+        "name": "Reflection: Beam 1.0 501B A23B",
+        "api": "openai-completions",
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "provider": "openrouter",
+        "reasoning": true,
+        "thinkingLevelMap": {
+          "off": null,
+          "minimal": null,
+          "low": "low",
+          "medium": "medium",
+          "high": "high",
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "input": [
+          "text"
+        ],
+        "cost": {
+          "input": 0.25,
+          "output": 1,
+          "cacheRead": 0.05,
+          "cacheWrite": 0
+        },
+        "contextWindow": 1048576,
+        "maxTokens": 131072,
+        "compat": {
+          "supportsDeveloperRole": false,
+          "thinkingFormat": "openrouter",
+          "supportsStrictMode": true,
+          "sendSessionAffinityHeaders": true
         }
       },
       {
@@ -20529,6 +20749,43 @@
         },
         "contextWindow": 1000000,
         "maxTokens": 65536,
+        "compat": {
+          "supportsDeveloperRole": false,
+          "thinkingFormat": "openrouter",
+          "supportsStrictMode": true,
+          "sendSessionAffinityHeaders": true
+        },
+        "inputLimits": {
+          "images": {
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        }
+      },
+      {
+        "type": "chat",
+        "id": "unbiased/pareto-26.10",
+        "name": "Pareto 26.10",
+        "api": "openai-completions",
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "provider": "openrouter",
+        "reasoning": false,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.8,
+          "output": 3.2,
+          "cacheRead": 0.03,
+          "cacheWrite": 0
+        },
+        "contextWindow": 1048576,
+        "maxTokens": 131072,
         "compat": {
           "supportsDeveloperRole": false,
           "thinkingFormat": "openrouter",
@@ -21234,6 +21491,32 @@
       },
       {
         "type": "chat",
+        "id": "xingchen-agi/xing4.0-29b-a4b:free",
+        "name": "XingChen: Xing4.0 29B A4B (free)",
+        "api": "openai-completions",
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "provider": "openrouter",
+        "reasoning": true,
+        "input": [
+          "text"
+        ],
+        "cost": {
+          "input": 0,
+          "output": 0,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "contextWindow": 262144,
+        "maxTokens": 235929,
+        "compat": {
+          "supportsDeveloperRole": false,
+          "thinkingFormat": "openrouter",
+          "supportsStrictMode": true,
+          "sendSessionAffinityHeaders": true
+        }
+      },
+      {
+        "type": "chat",
         "id": "z-ai/glm-4.5",
         "name": "Z.ai: GLM 4.5",
         "api": "openai-completions",
@@ -21535,13 +21818,13 @@
           "text"
         ],
         "cost": {
-          "input": 0.0152,
-          "output": 7,
-          "cacheRead": 0.0142,
+          "input": 0.0157,
+          "output": 7.508,
+          "cacheRead": 0.0157,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
-        "maxTokens": 943718,
+        "maxTokens": 131072,
         "compat": {
           "supportsDeveloperRole": false,
           "thinkingFormat": "openrouter",
@@ -22365,6 +22648,37 @@
       },
       {
         "type": "image",
+        "id": "krea/k3-edit",
+        "name": "Krea: K3 Edit",
+        "api": "openrouter-images",
+        "provider": "openrouter",
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "image"
+        ],
+        "cost": {
+          "input": 0,
+          "output": 0,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "inputLimits": {
+          "images": {
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        }
+      },
+      {
+        "type": "image",
         "id": "krea/krea-2-large",
         "name": "Krea: Krea 2 Large",
         "api": "openrouter-images",
@@ -22907,6 +23221,68 @@
         ],
         "output": [
           "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0,
+          "output": 0,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "inputLimits": {
+          "images": {
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        }
+      },
+      {
+        "type": "image",
+        "id": "qwen/qwen-image-2.1-pro",
+        "name": "Qwen: Qwen Image 2.1 Pro",
+        "api": "openrouter-images",
+        "provider": "openrouter",
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "image"
+        ],
+        "cost": {
+          "input": 0,
+          "output": 0,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "inputLimits": {
+          "images": {
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        }
+      },
+      {
+        "type": "image",
+        "id": "qwen/qwen-image-2.1-turbo",
+        "name": "Qwen: Qwen Image 2.1 Turbo",
+        "api": "openrouter-images",
+        "provider": "openrouter",
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
           "image"
         ],
         "cost": {
@@ -23692,6 +24068,29 @@
       },
       {
         "type": "classifier",
+        "id": "~perplexity/pplx-decider-flash-latest",
+        "name": "Perplexity: Decider Flash Latest",
+        "api": "typesafe-system-one",
+        "provider": "openrouter",
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.01,
+          "output": 0,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "contextWindow": 262144,
+        "compat": {
+          "imageInput": "state-image-urls",
+          "sendImageOptInHeader": false
+        }
+      },
+      {
+        "type": "classifier",
         "id": "~perplexity/pplx-decider-latest",
         "name": "Perplexity: Decider Latest",
         "api": "typesafe-system-one",
@@ -23845,7 +24244,11 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 65536
+        "contextWindow": 65536,
+        "compat": {
+          "imageInput": "state-image-urls",
+          "sendImageOptInHeader": false
+        }
       },
       {
         "type": "classifier",
@@ -23894,6 +24297,29 @@
       },
       {
         "type": "classifier",
+        "id": "liquid/d1-ultra",
+        "name": "LiquidAI: d1-ultra",
+        "api": "typesafe-system-one",
+        "provider": "openrouter",
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.042,
+          "output": 0,
+          "cacheRead": 0.042,
+          "cacheWrite": 0
+        },
+        "contextWindow": 32768,
+        "compat": {
+          "imageInput": "state-image-urls",
+          "sendImageOptInHeader": false
+        }
+      },
+      {
+        "type": "classifier",
         "id": "microsoft/microsoft-decision-1",
         "name": "Microsoft: Microsoft-Decision-1",
         "api": "typesafe-system-one",
@@ -23909,6 +24335,28 @@
           "cacheWrite": 0
         },
         "contextWindow": 32768,
+        "compat": {
+          "imageInput": "state-image-urls",
+          "sendImageOptInHeader": false
+        }
+      },
+      {
+        "type": "classifier",
+        "id": "nace-ai/drex-max",
+        "name": "Nace.AI: Drex Max",
+        "api": "typesafe-system-one",
+        "provider": "openrouter",
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "input": [
+          "text"
+        ],
+        "cost": {
+          "input": 0.12,
+          "output": 0,
+          "cacheRead": 0.12,
+          "cacheWrite": 0
+        },
+        "contextWindow": 262144,
         "compat": {
           "imageInput": "state-image-urls",
           "sendImageOptInHeader": false
@@ -23983,8 +24431,31 @@
       },
       {
         "type": "classifier",
-        "id": "perplexity/pplx-decider-v1.1-27b",
-        "name": "Perplexity: Decider V1.1 27B",
+        "id": "perplexity/pplx-decider-flash-v1.2",
+        "name": "Perplexity: Decider Flash V1.2",
+        "api": "typesafe-system-one",
+        "provider": "openrouter",
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.01,
+          "output": 0,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "contextWindow": 262144,
+        "compat": {
+          "imageInput": "state-image-urls",
+          "sendImageOptInHeader": false
+        }
+      },
+      {
+        "type": "classifier",
+        "id": "perplexity/pplx-decider-v1.2",
+        "name": "Perplexity: Decider V1.2",
         "api": "typesafe-system-one",
         "provider": "openrouter",
         "baseUrl": "https://openrouter.ai/api/v1",
@@ -23998,7 +24469,11 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 262144
+        "contextWindow": 262144,
+        "compat": {
+          "imageInput": "state-image-urls",
+          "sendImageOptInHeader": false
+        }
       },
       {
         "type": "classifier",
@@ -24061,6 +24536,29 @@
           "cacheWrite": 0
         },
         "contextWindow": 4096,
+        "compat": {
+          "imageInput": "state-image-urls",
+          "sendImageOptInHeader": false
+        }
+      },
+      {
+        "type": "classifier",
+        "id": "respan/span-02",
+        "name": "Respan: Span-02",
+        "api": "typesafe-system-one",
+        "provider": "openrouter",
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.01,
+          "output": 0,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "contextWindow": 131072,
         "compat": {
           "imageInput": "state-image-urls",
           "sendImageOptInHeader": false
@@ -24199,125 +24697,6 @@
         "compat": {
           "imageInput": "state-image-urls",
           "sendImageOptInHeader": false
-        }
-      },
-      {
-        "type": "chat",
-        "id": "deepseek/deepseek-v4.1-flash-1017",
-        "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
-        "api": "openai-completions",
-        "baseUrl": "https://openrouter.ai/api/v1",
-        "provider": "openrouter",
-        "reasoning": true,
-        "thinkingLevelMap": {
-          "off": "none",
-          "minimal": null,
-          "low": "low",
-          "medium": null,
-          "high": "high",
-          "xhigh": null,
-          "max": "max"
-        },
-        "input": [
-          "text",
-          "image"
-        ],
-        "cost": {
-          "input": 0.0115,
-          "output": 1.8,
-          "cacheRead": 0.0104,
-          "cacheWrite": 0
-        },
-        "contextWindow": 1048576,
-        "maxTokens": 943718,
-        "compat": {
-          "supportsDeveloperRole": false,
-          "thinkingFormat": "openrouter",
-          "supportsStrictMode": true,
-          "sendSessionAffinityHeaders": true,
-          "requiresReasoningContentOnAssistantMessages": true
-        },
-        "inputLimits": {
-          "images": {
-            "resize": {
-              "maxWidth": 2000,
-              "maxHeight": 2000,
-              "maxBytes": 4718592,
-              "jpegQuality": 80
-            }
-          }
-        }
-      },
-      {
-        "type": "chat",
-        "id": "elorian/glimpse",
-        "name": "Elorian: Glimpse",
-        "api": "openai-completions",
-        "baseUrl": "https://openrouter.ai/api/v1",
-        "provider": "openrouter",
-        "reasoning": true,
-        "input": [
-          "text",
-          "image"
-        ],
-        "cost": {
-          "input": 0.6,
-          "output": 3,
-          "cacheRead": 0.06,
-          "cacheWrite": 0
-        },
-        "contextWindow": 262144,
-        "maxTokens": 256000,
-        "compat": {
-          "supportsDeveloperRole": false,
-          "thinkingFormat": "openrouter",
-          "supportsStrictMode": true,
-          "sendSessionAffinityHeaders": true
-        },
-        "inputLimits": {
-          "images": {
-            "resize": {
-              "maxWidth": 2000,
-              "maxHeight": 2000,
-              "maxBytes": 4718592,
-              "jpegQuality": 80
-            }
-          }
-        }
-      },
-      {
-        "type": "chat",
-        "id": "inception/mercury-3",
-        "name": "Inception: Mercury 3",
-        "api": "openai-completions",
-        "baseUrl": "https://openrouter.ai/api/v1",
-        "provider": "openrouter",
-        "reasoning": true,
-        "thinkingLevelMap": {
-          "off": "none",
-          "minimal": null,
-          "low": "low",
-          "medium": "medium",
-          "high": "high",
-          "xhigh": null,
-          "max": null
-        },
-        "input": [
-          "text"
-        ],
-        "cost": {
-          "input": 0.1,
-          "output": 0.35,
-          "cacheRead": 0.01,
-          "cacheWrite": 0
-        },
-        "contextWindow": 1000000,
-        "maxTokens": 131072,
-        "compat": {
-          "supportsDeveloperRole": false,
-          "thinkingFormat": "openrouter",
-          "supportsStrictMode": true,
-          "sendSessionAffinityHeaders": true
         }
       },
       {
@@ -24630,286 +25009,6 @@
         }
       },
       {
-        "type": "chat",
-        "id": "qwen/qwen3.7-plus:batch",
-        "name": "Qwen: Qwen3.7 Plus (batch)",
-        "api": "openai-completions",
-        "baseUrl": "https://openrouter.ai/api/v1",
-        "provider": "openrouter",
-        "reasoning": true,
-        "input": [
-          "text",
-          "image"
-        ],
-        "cost": {
-          "input": 0.23,
-          "output": 0.92,
-          "cacheRead": 0,
-          "cacheWrite": 0
-        },
-        "contextWindow": 262144,
-        "maxTokens": 131072,
-        "compat": {
-          "supportsDeveloperRole": false,
-          "thinkingFormat": "openrouter",
-          "supportsStrictMode": true,
-          "sendSessionAffinityHeaders": true
-        },
-        "inputLimits": {
-          "images": {
-            "resize": {
-              "maxWidth": 2000,
-              "maxHeight": 2000,
-              "maxBytes": 4718592,
-              "jpegQuality": 80
-            }
-          }
-        }
-      },
-      {
-        "type": "chat",
-        "id": "recursive/flint-v1.0:free",
-        "name": "Recursive: Flint (free)",
-        "api": "openai-completions",
-        "baseUrl": "https://openrouter.ai/api/v1",
-        "provider": "openrouter",
-        "reasoning": true,
-        "thinkingLevelMap": {
-          "off": null
-        },
-        "input": [
-          "text"
-        ],
-        "cost": {
-          "input": 0,
-          "output": 0,
-          "cacheRead": 0,
-          "cacheWrite": 0
-        },
-        "contextWindow": 262144,
-        "maxTokens": 235929,
-        "compat": {
-          "supportsDeveloperRole": false,
-          "thinkingFormat": "openrouter",
-          "supportsStrictMode": true,
-          "sendSessionAffinityHeaders": true
-        }
-      },
-      {
-        "type": "chat",
-        "id": "reflection/beam-1.0-501b-a23b",
-        "name": "Reflection: Beam 1.0 501B A23B",
-        "api": "openai-completions",
-        "baseUrl": "https://openrouter.ai/api/v1",
-        "provider": "openrouter",
-        "reasoning": true,
-        "thinkingLevelMap": {
-          "off": null,
-          "minimal": null,
-          "low": "low",
-          "medium": "medium",
-          "high": "high",
-          "xhigh": "xhigh",
-          "max": "max"
-        },
-        "input": [
-          "text"
-        ],
-        "cost": {
-          "input": 0.25,
-          "output": 1,
-          "cacheRead": 0.05,
-          "cacheWrite": 0
-        },
-        "contextWindow": 1048576,
-        "maxTokens": 131072,
-        "compat": {
-          "supportsDeveloperRole": false,
-          "thinkingFormat": "openrouter",
-          "supportsStrictMode": true,
-          "sendSessionAffinityHeaders": true
-        }
-      },
-      {
-        "type": "chat",
-        "id": "unbiased/pareto-26.10",
-        "name": "Pareto 26.10",
-        "api": "openai-completions",
-        "baseUrl": "https://openrouter.ai/api/v1",
-        "provider": "openrouter",
-        "reasoning": false,
-        "input": [
-          "text",
-          "image"
-        ],
-        "cost": {
-          "input": 0.8,
-          "output": 3.2,
-          "cacheRead": 0.03,
-          "cacheWrite": 0
-        },
-        "contextWindow": 1048576,
-        "maxTokens": 131072,
-        "compat": {
-          "supportsDeveloperRole": false,
-          "thinkingFormat": "openrouter",
-          "supportsStrictMode": true,
-          "sendSessionAffinityHeaders": true
-        },
-        "inputLimits": {
-          "images": {
-            "resize": {
-              "maxWidth": 2000,
-              "maxHeight": 2000,
-              "maxBytes": 4718592,
-              "jpegQuality": 80
-            }
-          }
-        }
-      },
-      {
-        "type": "chat",
-        "id": "xingchen-agi/xing4.0-29b-a4b:free",
-        "name": "XingChen: Xing4.0 29B A4B (free)",
-        "api": "openai-completions",
-        "baseUrl": "https://openrouter.ai/api/v1",
-        "provider": "openrouter",
-        "reasoning": true,
-        "input": [
-          "text"
-        ],
-        "cost": {
-          "input": 0,
-          "output": 0,
-          "cacheRead": 0,
-          "cacheWrite": 0
-        },
-        "contextWindow": 262144,
-        "maxTokens": 235929,
-        "compat": {
-          "supportsDeveloperRole": false,
-          "thinkingFormat": "openrouter",
-          "supportsStrictMode": true,
-          "sendSessionAffinityHeaders": true
-        }
-      },
-      {
-        "type": "image",
-        "id": "krea/k3-edit",
-        "name": "Krea: K3 Edit",
-        "api": "openrouter-images",
-        "provider": "openrouter",
-        "baseUrl": "https://openrouter.ai/api/v1",
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "image"
-        ],
-        "cost": {
-          "input": 0,
-          "output": 0,
-          "cacheRead": 0,
-          "cacheWrite": 0
-        },
-        "inputLimits": {
-          "images": {
-            "resize": {
-              "maxWidth": 2000,
-              "maxHeight": 2000,
-              "maxBytes": 4718592,
-              "jpegQuality": 80
-            }
-          }
-        }
-      },
-      {
-        "type": "image",
-        "id": "qwen/qwen-image-2.1-pro",
-        "name": "Qwen: Qwen Image 2.1 Pro",
-        "api": "openrouter-images",
-        "provider": "openrouter",
-        "baseUrl": "https://openrouter.ai/api/v1",
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "image"
-        ],
-        "cost": {
-          "input": 0,
-          "output": 0,
-          "cacheRead": 0,
-          "cacheWrite": 0
-        },
-        "inputLimits": {
-          "images": {
-            "resize": {
-              "maxWidth": 2000,
-              "maxHeight": 2000,
-              "maxBytes": 4718592,
-              "jpegQuality": 80
-            }
-          }
-        }
-      },
-      {
-        "type": "image",
-        "id": "qwen/qwen-image-2.1-turbo",
-        "name": "Qwen: Qwen Image 2.1 Turbo",
-        "api": "openrouter-images",
-        "provider": "openrouter",
-        "baseUrl": "https://openrouter.ai/api/v1",
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "image"
-        ],
-        "cost": {
-          "input": 0,
-          "output": 0,
-          "cacheRead": 0,
-          "cacheWrite": 0
-        },
-        "inputLimits": {
-          "images": {
-            "resize": {
-              "maxWidth": 2000,
-              "maxHeight": 2000,
-              "maxBytes": 4718592,
-              "jpegQuality": 80
-            }
-          }
-        }
-      },
-      {
-        "type": "classifier",
-        "id": "~perplexity/pplx-decider-flash-latest",
-        "name": "Perplexity: Decider Flash Latest",
-        "api": "typesafe-system-one",
-        "provider": "openrouter",
-        "baseUrl": "https://openrouter.ai/api/v1",
-        "input": [
-          "text",
-          "image"
-        ],
-        "cost": {
-          "input": 0.01,
-          "output": 0,
-          "cacheRead": 0,
-          "cacheWrite": 0
-        },
-        "contextWindow": 262144,
-        "compat": {
-          "imageInput": "state-image-urls",
-          "sendImageOptInHeader": false
-        }
-      },
-      {
         "type": "classifier",
         "id": "baseten/elephant-1:free",
         "name": "Baseten: Elephant 1 (free)",
@@ -24952,123 +25051,9 @@
           "imageInput": "state-image-urls",
           "sendImageOptInHeader": false
         }
-      },
-      {
-        "type": "classifier",
-        "id": "liquid/d1-ultra",
-        "name": "LiquidAI: d1-ultra",
-        "api": "typesafe-system-one",
-        "provider": "openrouter",
-        "baseUrl": "https://openrouter.ai/api/v1",
-        "input": [
-          "text",
-          "image"
-        ],
-        "cost": {
-          "input": 0.042,
-          "output": 0,
-          "cacheRead": 0.042,
-          "cacheWrite": 0
-        },
-        "contextWindow": 32768,
-        "compat": {
-          "imageInput": "state-image-urls",
-          "sendImageOptInHeader": false
-        }
-      },
-      {
-        "type": "classifier",
-        "id": "nace-ai/drex-max",
-        "name": "Nace.AI: Drex Max",
-        "api": "typesafe-system-one",
-        "provider": "openrouter",
-        "baseUrl": "https://openrouter.ai/api/v1",
-        "input": [
-          "text"
-        ],
-        "cost": {
-          "input": 0.12,
-          "output": 0,
-          "cacheRead": 0.12,
-          "cacheWrite": 0
-        },
-        "contextWindow": 262144,
-        "compat": {
-          "imageInput": "state-image-urls",
-          "sendImageOptInHeader": false
-        }
-      },
-      {
-        "type": "classifier",
-        "id": "perplexity/pplx-decider-flash-v1.2",
-        "name": "Perplexity: Decider Flash V1.2",
-        "api": "typesafe-system-one",
-        "provider": "openrouter",
-        "baseUrl": "https://openrouter.ai/api/v1",
-        "input": [
-          "text",
-          "image"
-        ],
-        "cost": {
-          "input": 0.01,
-          "output": 0,
-          "cacheRead": 0,
-          "cacheWrite": 0
-        },
-        "contextWindow": 262144,
-        "compat": {
-          "imageInput": "state-image-urls",
-          "sendImageOptInHeader": false
-        }
-      },
-      {
-        "type": "classifier",
-        "id": "perplexity/pplx-decider-v1.2",
-        "name": "Perplexity: Decider V1.2",
-        "api": "typesafe-system-one",
-        "provider": "openrouter",
-        "baseUrl": "https://openrouter.ai/api/v1",
-        "input": [
-          "text",
-          "image"
-        ],
-        "cost": {
-          "input": 0.02,
-          "output": 0,
-          "cacheRead": 0,
-          "cacheWrite": 0
-        },
-        "contextWindow": 262144,
-        "compat": {
-          "imageInput": "state-image-urls",
-          "sendImageOptInHeader": false
-        }
-      },
-      {
-        "type": "classifier",
-        "id": "respan/span-02",
-        "name": "Respan: Span-02",
-        "api": "typesafe-system-one",
-        "provider": "openrouter",
-        "baseUrl": "https://openrouter.ai/api/v1",
-        "input": [
-          "text",
-          "image"
-        ],
-        "cost": {
-          "input": 0.01,
-          "output": 0,
-          "cacheRead": 0,
-          "cacheWrite": 0
-        },
-        "contextWindow": 131072,
-        "compat": {
-          "imageInput": "state-image-urls",
-          "sendImageOptInHeader": false
-        }
       }
     ],
-    "checkedAt": 1793176257627
+    "checkedAt": 1793176336424
   },
   "huggingface": {
     "models": [
