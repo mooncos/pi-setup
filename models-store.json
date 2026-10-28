@@ -2930,6 +2930,53 @@
         "type": "chat"
       },
       {
+        "id": "global.openai.gpt-6.1-terra",
+        "name": "GPT-6.1 Terra (Global)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 1,
+          "output": 5,
+          "cacheRead": 0.05,
+          "cacheWrite": 1.25,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 2,
+              "output": 7.5,
+              "cacheRead": 0.1,
+              "cacheWrite": 2.5
+            }
+          ]
+        },
+        "contextWindow": 1050000,
+        "maxTokens": 128000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "thinkingLevelMap": {
+          "xhigh": "xhigh"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
         "id": "global.xai.grok-4.6",
         "name": "Grok 4.6 (Global)",
         "api": "bedrock-converse-stream",
@@ -4742,6 +4789,53 @@
         "type": "chat"
       },
       {
+        "id": "openai.gpt-6.1-terra",
+        "name": "GPT-6.1 Terra",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 1.1,
+          "output": 5.5,
+          "cacheRead": 0.055,
+          "cacheWrite": 1.375,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 2.2,
+              "output": 8.25,
+              "cacheRead": 0.11,
+              "cacheWrite": 2.75
+            }
+          ]
+        },
+        "contextWindow": 1050000,
+        "maxTokens": 128000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "thinkingLevelMap": {
+          "xhigh": "xhigh"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
         "id": "openai.gpt-oss-120b",
         "name": "gpt-oss-120b",
         "api": "bedrock-converse-stream",
@@ -6374,6 +6468,53 @@
         "type": "chat"
       },
       {
+        "id": "us.openai.gpt-6.1-terra",
+        "name": "GPT-6.1 Terra (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 1.1,
+          "output": 5.5,
+          "cacheRead": 0.055,
+          "cacheWrite": 1.375,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 2.2,
+              "output": 8.25,
+              "cacheRead": 0.11,
+              "cacheWrite": 2.75
+            }
+          ]
+        },
+        "contextWindow": 1050000,
+        "maxTokens": 128000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "thinkingLevelMap": {
+          "xhigh": "xhigh"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
         "id": "us.writer.palmyra-x4-v1:0",
         "name": "Palmyra X4 (US)",
         "api": "bedrock-converse-stream",
@@ -6683,9 +6824,9 @@
         "type": "chat"
       }
     ],
-    "lastModified": 1793109028000,
-    "etag": "W/\"82b2ae102a7dc2619278fc3feed13ee1\"",
-    "checkedAt": 1793176257103
+    "lastModified": 1793193814000,
+    "etag": "W/\"aac28dbd23048802606b6b927d00d0dd\"",
+    "checkedAt": 1793198839040
   },
   "openrouter": {
     "models": [
@@ -6762,8 +6903,8 @@
         "contextWindow": 1000000,
         "maxTokens": 128000,
         "compat": {
-          "supportsMidConvoEffort": true,
-          "forceAdaptiveThinking": true
+          "forceAdaptiveThinking": true,
+          "supportsMidConvoEffort": true
         },
         "inputLimits": {
           "images": {
@@ -6846,9 +6987,9 @@
         "contextWindow": 1000000,
         "maxTokens": 128000,
         "compat": {
-          "supportsMidConvoEffort": true,
           "forceAdaptiveThinking": true,
-          "supportsTemperature": false
+          "supportsTemperature": false,
+          "supportsMidConvoEffort": true
         },
         "inputLimits": {
           "images": {
@@ -7128,9 +7269,9 @@
         "contextWindow": 1000000,
         "maxTokens": 128000,
         "compat": {
-          "supportsMidConvoEffort": true,
           "forceAdaptiveThinking": true,
-          "supportsTemperature": false
+          "supportsTemperature": false,
+          "supportsMidConvoEffort": true
         },
         "inputLimits": {
           "images": {
@@ -7299,9 +7440,9 @@
         "contextWindow": 1000000,
         "maxTokens": 128000,
         "compat": {
-          "supportsMidConvoEffort": true,
           "forceAdaptiveThinking": true,
-          "supportsTemperature": false
+          "supportsTemperature": false,
+          "supportsMidConvoEffort": true
         },
         "inputLimits": {
           "images": {
@@ -7318,8 +7459,8 @@
         "type": "chat",
         "id": "~anthropic/claude-fable-latest",
         "name": "Anthropic: Claude Fable Latest",
-        "api": "openai-completions",
-        "baseUrl": "https://openrouter.ai/api/v1",
+        "api": "anthropic-messages",
+        "baseUrl": "https://openrouter.ai/api",
         "provider": "openrouter",
         "reasoning": true,
         "thinkingLevelMap": {
@@ -7344,11 +7485,7 @@
         "contextWindow": 1000000,
         "maxTokens": 128000,
         "compat": {
-          "supportsDeveloperRole": false,
-          "thinkingFormat": "openrouter",
-          "supportsStrictMode": true,
-          "cacheControlFormat": "anthropic",
-          "sendSessionAffinityHeaders": true
+          "forceAdaptiveThinking": true
         },
         "inputLimits": {
           "images": {
@@ -7365,8 +7502,8 @@
         "type": "chat",
         "id": "~anthropic/claude-haiku-latest",
         "name": "Anthropic: Claude Haiku Latest",
-        "api": "openai-completions",
-        "baseUrl": "https://openrouter.ai/api/v1",
+        "api": "anthropic-messages",
+        "baseUrl": "https://openrouter.ai/api",
         "provider": "openrouter",
         "reasoning": true,
         "thinkingLevelMap": {
@@ -7400,11 +7537,7 @@
         "contextWindow": 1000000,
         "maxTokens": 128000,
         "compat": {
-          "supportsDeveloperRole": false,
-          "thinkingFormat": "openrouter",
-          "supportsStrictMode": true,
-          "cacheControlFormat": "anthropic",
-          "sendSessionAffinityHeaders": true
+          "forceAdaptiveThinking": true
         },
         "inputLimits": {
           "images": {
@@ -7421,8 +7554,8 @@
         "type": "chat",
         "id": "~anthropic/claude-opus-latest",
         "name": "Anthropic: Claude Opus Latest",
-        "api": "openai-completions",
-        "baseUrl": "https://openrouter.ai/api/v1",
+        "api": "anthropic-messages",
+        "baseUrl": "https://openrouter.ai/api",
         "provider": "openrouter",
         "reasoning": true,
         "thinkingLevelMap": {
@@ -7447,11 +7580,7 @@
         "contextWindow": 1000000,
         "maxTokens": 128000,
         "compat": {
-          "supportsDeveloperRole": false,
-          "thinkingFormat": "openrouter",
-          "supportsStrictMode": true,
-          "cacheControlFormat": "anthropic",
-          "sendSessionAffinityHeaders": true
+          "forceAdaptiveThinking": true
         },
         "inputLimits": {
           "images": {
@@ -7468,8 +7597,8 @@
         "type": "chat",
         "id": "~anthropic/claude-sonnet-latest",
         "name": "Anthropic: Claude Sonnet Latest",
-        "api": "openai-completions",
-        "baseUrl": "https://openrouter.ai/api/v1",
+        "api": "anthropic-messages",
+        "baseUrl": "https://openrouter.ai/api",
         "provider": "openrouter",
         "reasoning": true,
         "thinkingLevelMap": {
@@ -7494,11 +7623,7 @@
         "contextWindow": 1000000,
         "maxTokens": 128000,
         "compat": {
-          "supportsDeveloperRole": false,
-          "thinkingFormat": "openrouter",
-          "supportsStrictMode": true,
-          "cacheControlFormat": "anthropic",
-          "sendSessionAffinityHeaders": true
+          "forceAdaptiveThinking": true
         },
         "inputLimits": {
           "images": {
@@ -7578,9 +7703,9 @@
           "text"
         ],
         "cost": {
-          "input": 0.2542,
+          "input": 0.2043,
           "output": 8,
-          "cacheRead": 0.25,
+          "cacheRead": 0.2,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
@@ -7742,9 +7867,9 @@
           "image"
         ],
         "cost": {
-          "input": 0.15,
-          "output": 20,
-          "cacheRead": 0.14,
+          "input": 0.1577,
+          "output": 9.3421,
+          "cacheRead": 0.15,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
@@ -8146,9 +8271,9 @@
           "image"
         ],
         "cost": {
-          "input": 0.0313,
-          "output": 0.0798,
-          "cacheRead": 0.03,
+          "input": 0.0237,
+          "output": 0.1142,
+          "cacheRead": 0.0237,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
@@ -9823,9 +9948,9 @@
           "text"
         ],
         "cost": {
-          "input": 0.05,
+          "input": 0.0426,
           "output": 0.45,
-          "cacheRead": 0.05,
+          "cacheRead": 0.0426,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
@@ -9942,13 +10067,13 @@
           "text"
         ],
         "cost": {
-          "input": 0.9,
-          "output": 1.5,
-          "cacheRead": 0.25,
+          "input": 0.888966,
+          "output": 1.777932,
+          "cacheRead": 0.07408,
           "cacheWrite": 0
         },
-        "contextWindow": 1048576,
-        "maxTokens": 393216,
+        "contextWindow": 1024000,
+        "maxTokens": 384000,
         "compat": {
           "supportsDeveloperRole": false,
           "thinkingFormat": "openrouter",
@@ -9978,9 +10103,9 @@
           "text"
         ],
         "cost": {
-          "input": 0.2542,
+          "input": 0.2043,
           "output": 8,
-          "cacheRead": 0.25,
+          "cacheRead": 0.2,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
@@ -10015,9 +10140,9 @@
           "image"
         ],
         "cost": {
-          "input": 0.00189,
-          "output": 0.647,
-          "cacheRead": 0.000618,
+          "input": 0.00172,
+          "output": 0.444,
+          "cacheRead": 0.00157,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
@@ -13420,13 +13545,13 @@
           "image"
         ],
         "cost": {
-          "input": 0.39,
-          "output": 1.8,
-          "cacheRead": 0.039,
+          "input": 0.3895,
+          "output": 1.64,
+          "cacheRead": 0.0656,
           "cacheWrite": 0
         },
         "contextWindow": 262144,
-        "maxTokens": 65535,
+        "maxTokens": 235929,
         "compat": {
           "supportsDeveloperRole": false,
           "thinkingFormat": "openrouter",
@@ -13461,9 +13586,9 @@
           "image"
         ],
         "cost": {
-          "input": 0.56,
-          "output": 3.1,
-          "cacheRead": 0.15,
+          "input": 0.6,
+          "output": 3,
+          "cacheRead": 0.12,
           "cacheWrite": 0
         },
         "contextWindow": 262144,
@@ -13507,9 +13632,9 @@
           "image"
         ],
         "cost": {
-          "input": 0.15,
-          "output": 20,
-          "cacheRead": 0.14,
+          "input": 0.1577,
+          "output": 9.3421,
+          "cacheRead": 0.15,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
@@ -21783,13 +21908,13 @@
           "text"
         ],
         "cost": {
-          "input": 0.9,
-          "output": 2.9,
-          "cacheRead": 0.09,
+          "input": 0.8988,
+          "output": 2.8248,
+          "cacheRead": 0.16692,
           "cacheWrite": 0
         },
         "contextWindow": 202752,
-        "maxTokens": 65535,
+        "maxTokens": 131072,
         "compat": {
           "supportsDeveloperRole": false,
           "thinkingFormat": "openrouter",
@@ -21818,9 +21943,9 @@
           "text"
         ],
         "cost": {
-          "input": 0.0157,
-          "output": 7.508,
-          "cacheRead": 0.0157,
+          "input": 0.0133,
+          "output": 7.7344,
+          "cacheRead": 0.0133,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
@@ -21889,9 +22014,9 @@
           "image"
         ],
         "cost": {
-          "input": 0.0313,
-          "output": 0.0798,
-          "cacheRead": 0.03,
+          "input": 0.0237,
+          "output": 0.1142,
+          "cacheRead": 0.0237,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
@@ -24152,7 +24277,7 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 16384,
+        "contextWindow": 65536,
         "compat": {
           "imageInput": "state-image-urls",
           "sendImageOptInHeader": false
@@ -24170,7 +24295,7 @@
           "image"
         ],
         "cost": {
-          "input": 0.019,
+          "input": 0.038,
           "output": 0,
           "cacheRead": 0,
           "cacheWrite": 0
@@ -24348,12 +24473,13 @@
         "provider": "openrouter",
         "baseUrl": "https://openrouter.ai/api/v1",
         "input": [
-          "text"
+          "text",
+          "image"
         ],
         "cost": {
-          "input": 0.12,
+          "input": 0.06,
           "output": 0,
-          "cacheRead": 0.12,
+          "cacheRead": 0.06,
           "cacheWrite": 0
         },
         "contextWindow": 262144,
@@ -24721,13 +24847,13 @@
           "image"
         ],
         "cost": {
-          "input": 0.1425,
-          "output": 0.57,
-          "cacheRead": 0.01425,
+          "input": 0.135,
+          "output": 0.54,
+          "cacheRead": 0.0135,
           "cacheWrite": 0
         },
-        "contextWindow": 1048576,
-        "maxTokens": 943718,
+        "contextWindow": 1000000,
+        "maxTokens": 512000,
         "compat": {
           "supportsDeveloperRole": false,
           "thinkingFormat": "openrouter",
@@ -25009,22 +25135,60 @@
         }
       },
       {
+        "type": "chat",
+        "id": "prism-ml/ternary-bonsai-2-9b",
+        "name": "PrismML: Ternary Bonsai 2 9B",
+        "api": "openai-completions",
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "provider": "openrouter",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.08,
+          "output": 0.13,
+          "cacheRead": 0.04,
+          "cacheWrite": 0
+        },
+        "contextWindow": 262144,
+        "maxTokens": 65536,
+        "compat": {
+          "supportsDeveloperRole": false,
+          "thinkingFormat": "openrouter",
+          "supportsStrictMode": true,
+          "sendSessionAffinityHeaders": true
+        },
+        "inputLimits": {
+          "images": {
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        }
+      },
+      {
         "type": "classifier",
-        "id": "baseten/elephant-1:free",
-        "name": "Baseten: Elephant 1 (free)",
+        "id": "~liquid/d1-latest",
+        "name": "LiquidAI: d1 Latest",
         "api": "typesafe-system-one",
         "provider": "openrouter",
         "baseUrl": "https://openrouter.ai/api/v1",
         "input": [
-          "text"
+          "text",
+          "image"
         ],
         "cost": {
-          "input": 0,
+          "input": 0.02,
           "output": 0,
-          "cacheRead": 0,
+          "cacheRead": 0.02,
           "cacheWrite": 0
         },
-        "contextWindow": 16384,
+        "contextWindow": 65536,
         "compat": {
           "imageInput": "state-image-urls",
           "sendImageOptInHeader": false
@@ -25032,28 +25196,52 @@
       },
       {
         "type": "classifier",
-        "id": "baseten/mammoth-1:free",
-        "name": "Baseten: Mammoth 1 (free)",
+        "id": "~liquid/d1-ultra-latest",
+        "name": "LiquidAI: d1-ultra Latest",
         "api": "typesafe-system-one",
         "provider": "openrouter",
         "baseUrl": "https://openrouter.ai/api/v1",
         "input": [
-          "text"
+          "text",
+          "image"
         ],
         "cost": {
-          "input": 0,
+          "input": 0.042,
           "output": 0,
-          "cacheRead": 0,
+          "cacheRead": 0.042,
           "cacheWrite": 0
         },
-        "contextWindow": 16384,
+        "contextWindow": 32768,
+        "compat": {
+          "imageInput": "state-image-urls",
+          "sendImageOptInHeader": false
+        }
+      },
+      {
+        "type": "classifier",
+        "id": "liquid/d1.1",
+        "name": "LiquidAI: d1.1",
+        "api": "typesafe-system-one",
+        "provider": "openrouter",
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.02,
+          "output": 0,
+          "cacheRead": 0.02,
+          "cacheWrite": 0
+        },
+        "contextWindow": 65536,
         "compat": {
           "imageInput": "state-image-urls",
           "sendImageOptInHeader": false
         }
       }
     ],
-    "checkedAt": 1793176336424
+    "checkedAt": 1793198839725
   },
   "huggingface": {
     "models": [
@@ -25073,12 +25261,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 64000,
+        "maxTokens": 32768,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 64000,
-        "maxTokens": 32768,
         "type": "chat"
       },
       {
@@ -25097,12 +25285,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 163840,
+        "maxTokens": 32768,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 163840,
-        "maxTokens": 32768,
         "type": "chat"
       },
       {
@@ -25121,12 +25309,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 64000,
+        "maxTokens": 8192,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 64000,
-        "maxTokens": 8192,
         "type": "chat"
       },
       {
@@ -25145,12 +25333,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 163840,
+        "maxTokens": 163840,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 163840,
-        "maxTokens": 163840,
         "type": "chat"
       },
       {
@@ -25169,12 +25357,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 131072,
+        "maxTokens": 8192,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 131072,
-        "maxTokens": 8192,
         "type": "chat"
       },
       {
@@ -25193,12 +25381,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 163840,
+        "maxTokens": 65536,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 163840,
-        "maxTokens": 65536,
         "type": "chat"
       },
       {
@@ -25217,12 +25405,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 1048576,
+        "maxTokens": 384000,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 1048576,
-        "maxTokens": 384000,
         "type": "chat"
       },
       {
@@ -25241,12 +25429,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 1048576,
+        "maxTokens": 384000,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 1048576,
-        "maxTokens": 384000,
         "thinkingLevelMap": {
           "off": null,
           "minimal": null,
@@ -25275,12 +25463,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 1048576,
+        "maxTokens": 384000,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 1048576,
-        "maxTokens": 384000,
         "thinkingLevelMap": {
           "off": null,
           "minimal": null,
@@ -25318,12 +25506,12 @@
           "cacheRead": 0.003625,
           "cacheWrite": 0
         },
+        "contextWindow": 1048576,
+        "maxTokens": 393216,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 1048576,
-        "maxTokens": 393216,
         "thinkingLevelMap": {
           "off": null,
           "minimal": null,
@@ -25351,12 +25539,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 1000000,
+        "maxTokens": 384000,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 1000000,
-        "maxTokens": 384000,
         "thinkingLevelMap": {
           "off": null,
           "minimal": null,
@@ -25385,12 +25573,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 1048576,
+        "maxTokens": 384000,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 1048576,
-        "maxTokens": 384000,
         "thinkingLevelMap": {
           "off": "none",
           "minimal": null,
@@ -25429,12 +25617,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 1048576,
+        "maxTokens": 384000,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 1048576,
-        "maxTokens": 384000,
         "thinkingLevelMap": {
           "off": null,
           "minimal": null,
@@ -25473,12 +25661,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 131072,
+        "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 131072,
-        "maxTokens": 131072,
         "inputLimits": {
           "images": {
             "resize": {
@@ -25508,12 +25696,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 131072,
+        "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 131072,
-        "maxTokens": 131072,
         "inputLimits": {
           "images": {
             "resize": {
@@ -25543,12 +25731,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 131072,
+        "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 131072,
-        "maxTokens": 131072,
         "inputLimits": {
           "images": {
             "resize": {
@@ -25578,12 +25766,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 32768,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 32768,
         "inputLimits": {
           "images": {
             "resize": {
@@ -25613,12 +25801,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 32768,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 32768,
         "inputLimits": {
           "images": {
             "resize": {
@@ -25647,12 +25835,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 131072,
+        "maxTokens": 4096,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 131072,
-        "maxTokens": 4096,
         "type": "chat"
       },
       {
@@ -25671,12 +25859,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 131072,
+        "maxTokens": 4096,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 131072,
-        "maxTokens": 4096,
         "type": "chat"
       },
       {
@@ -25695,12 +25883,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 1000000,
+        "maxTokens": 80000,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 1000000,
-        "maxTokens": 80000,
         "type": "chat"
       },
       {
@@ -25719,12 +25907,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 204800,
+        "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 204800,
-        "maxTokens": 131072,
         "type": "chat"
       },
       {
@@ -25743,12 +25931,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 204800,
+        "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 204800,
-        "maxTokens": 131072,
         "type": "chat"
       },
       {
@@ -25767,12 +25955,12 @@
           "cacheRead": 0.03,
           "cacheWrite": 0
         },
+        "contextWindow": 204800,
+        "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 204800,
-        "maxTokens": 131072,
         "type": "chat"
       },
       {
@@ -25791,12 +25979,12 @@
           "cacheRead": 0.06,
           "cacheWrite": 0
         },
+        "contextWindow": 204800,
+        "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 204800,
-        "maxTokens": 131072,
         "type": "chat"
       },
       {
@@ -25816,12 +26004,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 524288,
+        "maxTokens": 512000,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 524288,
-        "maxTokens": 512000,
         "inputLimits": {
           "images": {
             "resize": {
@@ -25851,12 +26039,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 1000000,
+        "maxTokens": 512000,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 1000000,
-        "maxTokens": 512000,
         "thinkingLevelMap": {
           "off": null,
           "minimal": null,
@@ -25894,12 +26082,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 131072,
+        "maxTokens": 16384,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 131072,
-        "maxTokens": 16384,
         "type": "chat"
       },
       {
@@ -25918,12 +26106,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 16384,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 16384,
         "type": "chat"
       },
       {
@@ -25942,12 +26130,12 @@
           "cacheRead": 0.15,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 262144,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 262144,
         "type": "chat"
       },
       {
@@ -25967,12 +26155,12 @@
           "cacheRead": 0.1,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 262144,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 262144,
         "inputLimits": {
           "images": {
             "resize": {
@@ -26002,12 +26190,12 @@
           "cacheRead": 0.16,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 262144,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 262144,
         "inputLimits": {
           "images": {
             "resize": {
@@ -26037,12 +26225,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 262144,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 262144,
         "inputLimits": {
           "images": {
             "resize": {
@@ -26072,12 +26260,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 1000000,
+        "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 1000000,
-        "maxTokens": 131072,
         "thinkingLevelMap": {
           "off": null,
           "minimal": null,
@@ -26115,12 +26303,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 131072,
+        "maxTokens": 32768,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 131072,
-        "maxTokens": 32768,
         "thinkingLevelMap": {
           "off": null,
           "minimal": null,
@@ -26148,12 +26336,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 131072,
+        "maxTokens": 32768,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 131072,
-        "maxTokens": 32768,
         "thinkingLevelMap": {
           "off": null,
           "minimal": null,
@@ -26181,12 +26369,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 131072,
+        "maxTokens": 8192,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 131072,
-        "maxTokens": 8192,
         "type": "chat"
       },
       {
@@ -26205,12 +26393,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 40960,
+        "maxTokens": 16384,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 40960,
-        "maxTokens": 16384,
         "type": "chat"
       },
       {
@@ -26229,12 +26417,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 16384,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 16384,
         "type": "chat"
       },
       {
@@ -26253,12 +26441,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 81920,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 81920,
         "type": "chat"
       },
       {
@@ -26277,12 +26465,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 40960,
+        "maxTokens": 16384,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 40960,
-        "maxTokens": 16384,
         "type": "chat"
       },
       {
@@ -26301,12 +26489,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 131072,
+        "maxTokens": 16384,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 131072,
-        "maxTokens": 16384,
         "type": "chat"
       },
       {
@@ -26325,12 +26513,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 40960,
+        "maxTokens": 32768,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 40960,
-        "maxTokens": 32768,
         "thinkingLevelMap": {
           "off": "none",
           "minimal": null,
@@ -26358,12 +26546,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 65536,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 65536,
         "type": "chat"
       },
       {
@@ -26382,12 +26570,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 65536,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 65536,
         "type": "chat"
       },
       {
@@ -26406,12 +26594,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 65536,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 65536,
         "type": "chat"
       },
       {
@@ -26430,12 +26618,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 32768,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 32768,
         "type": "chat"
       },
       {
@@ -26455,12 +26643,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 131072,
+        "maxTokens": 32768,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 131072,
-        "maxTokens": 32768,
         "inputLimits": {
           "images": {
             "resize": {
@@ -26490,12 +26678,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 131072,
+        "maxTokens": 32768,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 131072,
-        "maxTokens": 32768,
         "thinkingLevelMap": {
           "off": null,
           "minimal": null,
@@ -26534,12 +26722,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 131072,
+        "maxTokens": 32768,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 131072,
-        "maxTokens": 32768,
         "inputLimits": {
           "images": {
             "resize": {
@@ -26569,12 +26757,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 65536,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 65536,
         "inputLimits": {
           "images": {
             "resize": {
@@ -26604,12 +26792,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 65536,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 65536,
         "inputLimits": {
           "images": {
             "resize": {
@@ -26639,12 +26827,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 65536,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 65536,
         "inputLimits": {
           "images": {
             "resize": {
@@ -26674,12 +26862,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 32768,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 32768,
         "thinkingLevelMap": {
           "off": "none",
           "minimal": null,
@@ -26718,12 +26906,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 65536,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 65536,
         "inputLimits": {
           "images": {
             "resize": {
@@ -26753,12 +26941,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 65536,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 65536,
         "inputLimits": {
           "images": {
             "resize": {
@@ -26788,12 +26976,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 65536,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 65536,
         "inputLimits": {
           "images": {
             "resize": {
@@ -26822,12 +27010,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 131072,
         "thinkingLevelMap": {
           "off": null,
           "minimal": null,
@@ -26856,12 +27044,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 32768,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 32768,
         "thinkingLevelMap": {
           "off": null,
           "minimal": null,
@@ -26899,12 +27087,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 256000,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 256000,
         "type": "chat"
       },
       {
@@ -26924,12 +27112,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 256000,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 256000,
         "thinkingLevelMap": {
           "off": null,
           "minimal": null,
@@ -26967,12 +27155,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 128000,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 128000,
         "thinkingLevelMap": {
           "off": "none",
           "minimal": null,
@@ -27000,12 +27188,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 1000000,
+        "maxTokens": 64000,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 1000000,
-        "maxTokens": 64000,
         "thinkingLevelMap": {
           "off": "none",
           "minimal": null,
@@ -27034,12 +27222,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 1048576,
+        "maxTokens": 1048576,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 1048576,
-        "maxTokens": 1048576,
         "thinkingLevelMap": {
           "off": null,
           "minimal": null,
@@ -27078,12 +27266,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 524288,
+        "maxTokens": 1048576,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 524288,
-        "maxTokens": 1048576,
         "inputLimits": {
           "images": {
             "resize": {
@@ -27112,12 +27300,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 131072,
         "thinkingLevelMap": {
           "off": "none",
           "minimal": null,
@@ -27145,12 +27333,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 1048576,
+        "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 1048576,
-        "maxTokens": 131072,
         "thinkingLevelMap": {
           "off": "none",
           "minimal": null,
@@ -27178,12 +27366,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 131072,
+        "maxTokens": 98304,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 131072,
-        "maxTokens": 98304,
         "type": "chat"
       },
       {
@@ -27203,12 +27391,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 65536,
+        "maxTokens": 16384,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 65536,
-        "maxTokens": 16384,
         "inputLimits": {
           "images": {
             "resize": {
@@ -27237,12 +27425,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 204800,
+        "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 204800,
-        "maxTokens": 131072,
         "type": "chat"
       },
       {
@@ -27262,12 +27450,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 131072,
+        "maxTokens": 32768,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 131072,
-        "maxTokens": 32768,
         "inputLimits": {
           "images": {
             "resize": {
@@ -27296,12 +27484,12 @@
           "cacheRead": 0.11,
           "cacheWrite": 0
         },
+        "contextWindow": 204800,
+        "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 204800,
-        "maxTokens": 131072,
         "type": "chat"
       },
       {
@@ -27320,12 +27508,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 200000,
+        "maxTokens": 128000,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 200000,
-        "maxTokens": 128000,
         "type": "chat"
       },
       {
@@ -27344,12 +27532,12 @@
           "cacheRead": 0.2,
           "cacheWrite": 0
         },
+        "contextWindow": 202752,
+        "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 202752,
-        "maxTokens": 131072,
         "type": "chat"
       },
       {
@@ -27368,12 +27556,12 @@
           "cacheRead": 0.2,
           "cacheWrite": 0
         },
+        "contextWindow": 202752,
+        "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 202752,
-        "maxTokens": 131072,
         "type": "chat"
       },
       {
@@ -27392,12 +27580,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 262144,
+        "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 262144,
-        "maxTokens": 131072,
         "type": "chat"
       },
       {
@@ -27416,12 +27604,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 1048576,
+        "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 1048576,
-        "maxTokens": 131072,
         "thinkingLevelMap": {
           "off": null,
           "minimal": null,
@@ -27450,12 +27638,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
+        "contextWindow": 1048576,
+        "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true,
           "supportsDeveloperRole": false
         },
-        "contextWindow": 1048576,
-        "maxTokens": 131072,
         "thinkingLevelMap": {
           "off": null,
           "minimal": null,
@@ -27478,9 +27666,9 @@
         "type": "chat"
       }
     ],
-    "lastModified": 1793109057000,
-    "etag": "W/\"2a00e6fbd9aa8a8da7a32f4713068cd3\"",
-    "checkedAt": 1793176257100
+    "lastModified": 1793193852000,
+    "etag": "W/\"c7a184b596963232e9f5cf60923b0156\"",
+    "checkedAt": 1793198839024
   },
   "opencode": {
     "models": [
