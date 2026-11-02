@@ -11,7 +11,8 @@
     "git:git@github.com:nicobailon/pi-intercom.git",
     "npm:pi-web-access",
     "npm:pi-btw",
-    "git:git@github.com:ayghri/i-have-adhd.git"
+    "git:git@github.com:ayghri/i-have-adhd.git",
+    "npm:@injaneity/pi-computer-use"
   ],
   "subagents": {
     "agentOverrides": {
