@@ -7,3 +7,6 @@ intercom/
 pi-crash.log
 push-ericsson.sh
 run-history.jsonl
+auth.json.bak
+auth.json.*
+mcp-auth.json
