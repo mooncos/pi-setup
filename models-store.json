@@ -7016,7 +7016,7 @@
     ],
     "lastModified": 1794305801000,
     "etag": "W/\"24972678856b375dcb166ae927804766\"",
-    "checkedAt": 1794306153852
+    "checkedAt": 1794328880679
   },
   "openrouter": {
     "models": [
@@ -11429,12 +11429,12 @@
           "image"
         ],
         "cost": {
-          "input": 0.036,
-          "output": 0.108,
-          "cacheRead": 0.018,
+          "input": 0.04,
+          "output": 0.15,
+          "cacheRead": 0.01,
           "cacheWrite": 0
         },
-        "contextWindow": 262144,
+        "contextWindow": 131072,
         "maxTokens": 32768,
         "compat": {
           "supportsDeveloperRole": false,
@@ -12135,8 +12135,8 @@
           "cacheRead": 0.15,
           "cacheWrite": 0
         },
-        "contextWindow": 1048576,
-        "maxTokens": 131072,
+        "contextWindow": 1000000,
+        "maxTokens": 262144,
         "compat": {
           "supportsDeveloperRole": false,
           "thinkingFormat": "openrouter",
@@ -13114,13 +13114,13 @@
           "image"
         ],
         "cost": {
-          "input": 0.39,
-          "output": 1.8,
-          "cacheRead": 0.039,
+          "input": 0.3895,
+          "output": 1.64,
+          "cacheRead": 0.0656,
           "cacheWrite": 0
         },
         "contextWindow": 262144,
-        "maxTokens": 65535,
+        "maxTokens": 235929,
         "compat": {
           "supportsDeveloperRole": false,
           "thinkingFormat": "openrouter",
@@ -17711,13 +17711,13 @@
           "image"
         ],
         "cost": {
-          "input": 0.08,
-          "output": 0.13,
-          "cacheRead": 0.04,
+          "input": 0.077,
+          "output": 0.113,
+          "cacheRead": 0.069,
           "cacheWrite": 0
         },
         "contextWindow": 262144,
-        "maxTokens": 65536,
+        "maxTokens": 40960,
         "compat": {
           "supportsDeveloperRole": false,
           "thinkingFormat": "openrouter",
@@ -17877,13 +17877,13 @@
           "image"
         ],
         "cost": {
-          "input": 0.2,
-          "output": 3,
-          "cacheRead": 0.2,
+          "input": 0.25,
+          "output": 2,
+          "cacheRead": 0.025,
           "cacheWrite": 0
         },
         "contextWindow": 262144,
-        "maxTokens": 32768,
+        "maxTokens": 65536,
         "compat": {
           "supportsDeveloperRole": false,
           "thinkingFormat": "openrouter",
@@ -17914,9 +17914,9 @@
           "image"
         ],
         "cost": {
-          "input": 0.012,
-          "output": 0.113,
-          "cacheRead": 0.011,
+          "input": 0.016,
+          "output": 0.148,
+          "cacheRead": 0.015,
           "cacheWrite": 0
         },
         "contextWindow": 262144,
@@ -18864,9 +18864,9 @@
           "text"
         ],
         "cost": {
-          "input": 0.132,
-          "output": 0.528,
-          "cacheRead": 0.033,
+          "input": 0.0825,
+          "output": 0.33,
+          "cacheRead": 0.020625,
           "cacheWrite": 0
         },
         "contextWindow": 262144,
@@ -18934,13 +18934,13 @@
           "text"
         ],
         "cost": {
-          "input": 0.834,
-          "output": 2.501,
-          "cacheRead": 0.042,
+          "input": 0.7506,
+          "output": 2.2509,
+          "cacheRead": 0.0378,
           "cacheWrite": 0
         },
-        "contextWindow": 262144,
-        "maxTokens": 235929,
+        "contextWindow": 1048576,
+        "maxTokens": 64000,
         "compat": {
           "supportsDeveloperRole": false,
           "thinkingFormat": "openrouter",
@@ -20059,13 +20059,13 @@
           "text"
         ],
         "cost": {
-          "input": 0.9,
-          "output": 2.9,
-          "cacheRead": 0.09,
+          "input": 0.8988,
+          "output": 2.8248,
+          "cacheRead": 0.16692,
           "cacheWrite": 0
         },
         "contextWindow": 202752,
-        "maxTokens": 65535,
+        "maxTokens": 131072,
         "compat": {
           "supportsDeveloperRole": false,
           "thinkingFormat": "openrouter",
@@ -20094,13 +20094,13 @@
           "text"
         ],
         "cost": {
-          "input": 0.0062,
-          "output": 6.8,
-          "cacheRead": 0.0052,
+          "input": 0.0066,
+          "output": 7.9833,
+          "cacheRead": 0.0066,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
-        "maxTokens": 943718,
+        "maxTokens": 131072,
         "compat": {
           "supportsDeveloperRole": false,
           "thinkingFormat": "openrouter",
@@ -20211,9 +20211,9 @@
           "image"
         ],
         "cost": {
-          "input": 0.03,
+          "input": 0.033,
           "output": 0.061,
-          "cacheRead": 0.013,
+          "cacheRead": 0.014,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
@@ -23436,13 +23436,13 @@
           "image"
         ],
         "cost": {
-          "input": 0.1125,
-          "output": 0.45,
-          "cacheRead": 0.01125,
+          "input": 0.075,
+          "output": 0.3,
+          "cacheRead": 0.0075,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
-        "maxTokens": 943718,
+        "maxTokens": 524288,
         "compat": {
           "supportsDeveloperRole": false,
           "thinkingFormat": "openrouter",
@@ -23482,9 +23482,9 @@
           "image"
         ],
         "cost": {
-          "input": 0.19,
-          "output": 8.94,
-          "cacheRead": 0.19,
+          "input": 0.2755,
+          "output": 8.3805,
+          "cacheRead": 0.2,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
@@ -24691,7 +24691,7 @@
         }
       }
     ],
-    "checkedAt": 1794316125695
+    "checkedAt": 1794328881273
   },
   "huggingface": {
     "models": [
@@ -27118,7 +27118,7 @@
     ],
     "lastModified": 1793193852000,
     "etag": "W/\"c7a184b596963232e9f5cf60923b0156\"",
-    "checkedAt": 1794306153856
+    "checkedAt": 1794328880678
   },
   "opencode": {
     "models": [
