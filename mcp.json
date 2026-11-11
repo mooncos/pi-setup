@@ -2,7 +2,10 @@
   "mcpServers": {
     "viajante": {
       "command": "npx",
-      "args": ["-y", "@viajante/mcp"]
+      "args": [
+        "-y",
+        "@viajante/mcp"
+      ]
     },
     "slack": {
       "url": "https://mcp.slack.com/mcp",
